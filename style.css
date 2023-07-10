@@ -106,7 +106,7 @@ nav ul li a:hover::after
 }
 .tab-titles{
     display: flex;
-    margin: -450px 602px 40px;
+    margin: -390px 540px 40px;
 }
 .tab-link{
     margin-right: 50px;
@@ -123,7 +123,7 @@ nav ul li a:hover::after
     position:absolute;
     background:#ff004f;
     left: 0;
-    bottom: 385px;
+    bottom: 320;
     transition: 0.5s;
 }
 
