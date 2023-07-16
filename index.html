@@ -5,38 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f9468fe9e0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
         <div class="container">
-            <nav>
-                <img src="Images/logo1.png" class="logo">
-                <ul>
+            <nav class="fixed-nav">
+                <p class="logo"><span>S</span>uyog.</p> 
+                
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                    
-
-
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                
+                
                 </ul>
-            </nav>
-            <div class="header-text">
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                
+            </nav> 
+            <div class="header-text" >
                 <p>UI/UX Designer</p>
                 <h1>Hi, I'm <span>Suyog</span> Gautam <br>From Nepal</h1>
             </div>
         </div>
+    </div>
         <!---------------------------------about--------------------------->
         <div id="about">
             <div class="container">
                 <div class="row">
                     <div class="about-col1">
-                        <img src="Images/avatar1.png" >
+                        <img src="Images/IMG_20220626_110511__01__01.jpg" >
 
                     </div>
+                    
                     <div class="about-col2">
-                        <h1 class="sub-title">About Me</h1>
+                        <h1 class="sub-title">About Me </h1>
                         <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                             Veniam molestias nostrum ducimus officiis,
                              voluptatibus commodi dolorem autem. Dolores reiciendis,
@@ -44,28 +50,212 @@
                                sequi vitae nostrum iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                Sed vitae quasi repellendus tenetur amet reprehenderit saepe ipsa
                                 repudiandae aspernatur! Accusamus adipisci 
-                               blanditiis ab harum laborum nulla nesciunt consectetur ducimus quis?</p>
-                    </div>
-                    <div class="tab-titles">
-                        <p class="tab-link active-link">Skills</p>
-                        <p class="tab-link">Experience</p>
-                        <p class="tab-link">Education</p>
-                    </div>
-                    <div>
-                        <ul>
-                            <1i><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                            <1i><span>Web Development</span><br>Web app Development</li>
-                            <1i><span>App Development</span><br>Bui1ding Android/ iOS apps</li>
-                            </ul>
-                           
-                    </div>
+                               blanditiis ab harum laborum nulla nesciunt consectetur ducimus quis?
+                               
+                        </p>
+                        <br>
+                        <div class="tab-titles">
+                            <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-link" onclick="opentab('education')">Education</p>
+                        </div>
+
+                             <div>
+                                <ul class="tab-content active-tab" id="skills">
+                                    <li class="tittle-name"><span>UI/UX</span><br>Designing Web/App interfaces</li><br>
+                                    <li class="tittle-name"><span>Web Development</span><br>Web app Development</li><br>
+                                    <li class="tittle-name"><span>App Development</span><br>Bui1ding Android/ iOS apps</li>
+                                    
+                                    
+                                </ul>
+                            </div>
+                                <div>
+                                    <ul class="tab-content" id="experience">
+    
+                                
+                                        <li class="tittle-name" ><span>2021-Current</span><br>UI/UX Design Training at ET Institute </1i>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul class="tab-content" id="education">
+                                        <li class="tittle-name"><span>2020</span><br>SEE From VIddya Bikash </li><br>
+                                        <li class="tittle-name"><span>2022</span><br>+2 Science From Ankuram Academy</li><br>
+                                        <li class="tittle-name"><span>2023-Current</span><br>BSCIt in Ismt Chitwan</li> 
+                                    </ul>
+                                 </div>
+                               
+                               
+                            
+
+                    
+                        
+                        </div> 
+                      
+                    
 
                 </div>
 
                 
             </div>
         </div>
+        <!---------------------------------Secvices--------------------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title"> My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        
+                        <h2>Ux/Ui Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat praesentium nobis fugiat inventore facilis expedita ipsam id sunt, nisi recusandae eligendi atque adipisci cum odio, non, at omnis. Dignissimos, a.</p>
+                        <a href="#"> Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        
+                        <h2>Web Development</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat praesentium nobis fugiat inventore facilis expedita ipsam id sunt, nisi recusandae eligendi atque adipisci cum odio, non, at omnis. Dignissimos, a.</p>
+                        <a href="#"> Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Development</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat praesentium nobis fugiat inventore facilis expedita ipsam id sunt, nisi recusandae eligendi atque adipisci cum odio, non, at omnis. Dignissimos, a.</p>
+                        <a href="#"> Learn more</a>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <!---------------------------------Portfolio--------------------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title"> My Works</h1>
+                <div class="works-list">
+                    <div class="work">
+                        <img src="Images/mywork1.jpg" alt="">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>The app allows you to listen any kind of music from the artists around teh world.</p>
+                            <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a>-->
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/mywork4.jpg" alt="">
+                        <div class="layer">
+                            <h3>Ecommerce Website</h3>
+                            <p>This app allows you to order any kind of item from around the country with one click.</p>
+                           <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a>-->
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/mywork3.png" alt="">
+                        <div class="layer">
+                            <h3>Expense Tracker tool</h3>
+                            <p>This app allows you to gain better control over your personal finances by accurately tracking your expenses. </p>
+                            <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a>-->
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <a href="#" class="btn"> See More</a>
+            </div>
+            
+        </div>
+        <!--------------------Contact---------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title"> Contact Me</h1>
+                        <p>
+                       <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHxHDrlXcfghqsBMzZCCnBXsvdxdKMhPfSQdQjXLjfvwskbsZmscSkLCNXclNGwZdrPvtMR"><i class="fa-solid fa-paper-plane"></i></a> gautamsuyog19@gmail.com
+                        </p>
+                        <div class="social-icon">
+                            <a href="https://www.facebook.com/suyoggautam19"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/hey_suyog/"><i class="fa-brands fa-instagram "></i></a>
+                            <a href="https://twitter.com/hey_suyog"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://github.com/TheSuyog10"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="Images/The CV is.pdf" download class="btn btn2" >Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet"> 
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="text" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" row="100" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="copyright">
+                <p>Copyright © Suyog</p>
+            </div>
+
+        </div>
+
+    
          
-    </div>
+        
+    <script>
+        var tablinks = document.getElementsByClassName("tab-link");
+        var tabcontents = document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    <script>
+        var sidemenus = document.getElementById("sidemenu");
+        function openmenu()
+        {
+            sidemenus.style.right="15";
+        }
+        function closemenu()
+        {
+            sidemenus.style.right="-200";
+        }
+        
+    
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxC9OG6KNPXs38iAG0TiecX_ZxjJhW4eERQD66pb6vFvmghagfe1MzLbZ5qIcIWtuEG/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML="Message Sent Successfully"
+            setTimeout(function()
+            {
+                msg.innerHTML = ""
+            },5000)
+            form.reset( )
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
+ 
