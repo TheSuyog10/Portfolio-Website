@@ -30,7 +30,7 @@ header{
 }
 .container{
    
-    padding: 0px 10%; 
+    padding: 0px ; 
     
 
 }
@@ -44,8 +44,13 @@ nav{
     
     position: fixed;
     top:0;
-    width: 80%;
-    /*background: linear-gradient(rgba(36, 13, 22, 0.571),#262626);*/
+    width: 100%;
+    padding-right: 7%;
+    height: 8vh;
+    background: linear-gradient(rgba(150, 150, 150, 0.322),#2626266e);
+    backdrop-filter: blur(20px);
+   
+    
     
 }
 
@@ -56,7 +61,7 @@ nav{
     font-size: 35px;
     font-weight: 800;
     
-    
+    padding-left: 10%;
 }
 .logo span
 {
@@ -109,7 +114,7 @@ nav ul li a:hover::after
 /*------------------about-------------------*/
 #about{
     padding: -10%;
-    color: #ababaa;
+    color:lightgray;
 }
 .row{
     display: flex;
@@ -138,6 +143,11 @@ background-color: #9e3445;
 
 .about-col2{
     flex-basis: 60%;
+}
+.about-col2 p{
+    font-size: 20px;
+    text-align: justify;
+    color: lightgray;
 }
 .sub-title{
     font-size: 60px;
@@ -405,10 +415,23 @@ form .btn.btn2{
 nav .fa-solid{
     display: none;
 }
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 100px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #a1515e;
+    border-radius: 100px;
+  }
 
 
 /*-------------------Css of Small Screen--------------------*/
-@media only screen and (max-wiDth: 600PX)
+@media only screen and (max-wiDth: 900PX)
 {
     .header-text{
         margin-top: 75%;
@@ -432,6 +455,7 @@ nav .fa-solid{
         position: fixed;
         top: 0;
         right: -200px;
+        scale: 0;
         width: 200px;
         height: 110vh;
         padding-top: 30px;

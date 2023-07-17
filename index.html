@@ -26,10 +26,15 @@
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                 
             </nav> 
+            </div>
             <div class="header-text" >
                 <p>UI/UX Designer</p>
                 <h1>Hi, I'm <span>Suyog</span> Gautam <br>From Nepal</h1>
-            </div>
+               
+                   
+
+            
+            
         </div>
     </div>
         <!---------------------------------about--------------------------->
@@ -43,15 +48,12 @@
                     
                     <div class="about-col2">
                         <h1 class="sub-title">About Me </h1>
-                        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                            Veniam molestias nostrum ducimus officiis,
-                             voluptatibus commodi dolorem autem. Dolores reiciendis,
-                              repellendus dolore quaerat ullam voluptates magnam minima
-                               sequi vitae nostrum iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                               Sed vitae quasi repellendus tenetur amet reprehenderit saepe ipsa
-                                repudiandae aspernatur! Accusamus adipisci 
-                               blanditiis ab harum laborum nulla nesciunt consectetur ducimus quis?
-                               
+                        <p> I am a beginner developer trying to spread my hands at everything possible gradually.
+                             At my current state, I am acheiving for web, mobile and desktop development. With gradual
+                              increase in number of people attracted towards developer title, I am also targeting as a
+                               DevOps Engineer to grab the opportunity. My skills, qualification and experience can be
+                                learned below, else you can contact me through email and number provided or from the contact
+                                 button in the website. Thank you for your time and visit to my website.
                         </p>
                         <br>
                         <div class="tab-titles">
@@ -229,7 +231,8 @@
         var sidemenus = document.getElementById("sidemenu");
         function openmenu()
         {
-            sidemenus.style.right="15";
+            sidemenus.style.right="0";
+            sidemenus.style.scale="1";
         }
         function closemenu()
         {
@@ -238,6 +241,8 @@
         
     
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxC9OG6KNPXs38iAG0TiecX_ZxjJhW4eERQD66pb6vFvmghagfe1MzLbZ5qIcIWtuEG/exec'
         const form = document.forms['submit-to-google-sheet']
@@ -246,11 +251,12 @@
         form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {msg.innerHTML="Message Sent Successfully"
-            setTimeout(function()
-            {
-                msg.innerHTML = ""
-            },5000)
+            .then(response => {
+                Swal.fire(
+  'Success',
+  'The message was sent.',
+  'success'
+),
             form.reset( )
         })
             .catch(error => console.error('Error!', error.message))
