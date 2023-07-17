@@ -370,6 +370,7 @@ background-color: #9e3445;
     color: #9e3445;
     transform: translateY(-10px);
     font-size: 30px;
+    
 }
 .btn.btn2{
     display: inline-block;
@@ -444,6 +445,7 @@ nav .fa-solid{
     nav
     {
         position: absolute;
+        
     }
     nav .fa-solid{
         display:block;
@@ -455,7 +457,7 @@ nav .fa-solid{
         position: fixed;
         top: 0;
         right: -200px;
-        scale: 0;
+        
         width: 200px;
         height: 110vh;
         padding-top: 30px;
