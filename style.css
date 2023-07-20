@@ -35,21 +35,28 @@ header{
 
 }
 
-nav{
+.fixed-nav{
     
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    
-    position: fixed;
+    font-family: sans-serif;
+    transition: backdrop-filter 0.3s;
     top:0;
     width: 100%;
     padding-right: 7%;
-    height: 8vh;
-    background: linear-gradient(rgba(150, 150, 150, 0.322),#2626266e);
-    backdrop-filter: blur(20px);
+    height: 7vh;
+    position: fixed;
+    z-index: 999;
    
+   
+
+}
+
+.blur{
+    background: linear-gradient(rgba(150, 150, 150, 0.322),#8946466e);
+    backdrop-filter: blur(15px);
     
     
 }
@@ -66,7 +73,7 @@ nav{
 .logo span
 {
     color: #ff004f;
-    font-size: 42px;
+    
 }
     
 nav ul li{
@@ -108,12 +115,16 @@ nav ul li a:hover::after
     margin-top: 20px;
 
 }
-.header-text h1 span{
-    color: #ff004f
+.header-text h1 .nameTxt {
+    color: #a1515e
+}
+.auto-type{
+    color: #b20038;
+    
 }
 /*------------------about-------------------*/
 #about{
-    padding: -10%;
+    padding: 1% 4%;
     color:lightgray;
 }
 .row{
@@ -209,7 +220,8 @@ background-color: #9e3445;
 }
 /*-----------------Services------------------*/
 #services{
-    padding: 30px 0;
+    padding: 0 4%;
+    
 }
 .services-list{
     display: grid;
@@ -251,7 +263,7 @@ background-color: #9e3445;
 }
 /*-----------------PORTFOLIO------------------*/
 #portfolio{
-    padding: 50;
+    padding: 1% 4%;
 }
 .works-list{
     display: grid;
@@ -335,13 +347,35 @@ background-color: #9e3445;
     background: #9e3445;
 }
 /*------------------COntact------------------*/
+.contact-right form{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding-bottom: 50px;
+    padding-left: 350px;
+}
+.contact-right form textarea{
+    width: 700px;
+    height: 200px ;
+    resize: none;
+    border: none;
+    border-radius: 10px;
+}
+.contact-right form input{
+    width: 700px;
+    border: none;
+    border-radius: 10px;
+}
 .contact-left
 {
+    
+  padding: 1% 4%;  
     flex-basis: 35%;
 }
 .contact-right{
     flex-basis: 60%;
-    
+    margin-top:-90px;
+        
 }
 .contact-left p{
     margin-top: 30px;
@@ -375,6 +409,10 @@ background-color: #9e3445;
 .btn.btn2{
     display: inline-block;
     background: #9e3445;
+    padding-right: 10%;
+}
+#submitBtn{
+    margin-right:80%;
 }
 .contact-right form
 {
