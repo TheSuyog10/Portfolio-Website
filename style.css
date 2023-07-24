@@ -550,9 +550,11 @@ nav .fa-solid{
         
     }
     .contact-right form input
-    {width:100%;}
+    {width:90%;
+    margin: 1% 5%;}
     .contact-right form textarea{
-        width:100%
+        width:90%;
+        margin:1% 5%;
     }
 
     
@@ -565,9 +567,16 @@ nav .fa-solid{
     
 
 }
-#msg
-{
-    color:green;
-    margin-top: -30px;
-    display: block;
-}
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 100px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #a1515e;
+    border-radius: 100px;
+  }
