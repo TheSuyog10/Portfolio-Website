@@ -353,6 +353,7 @@ background-color: #9e3445;
     flex-direction: column;
     padding-bottom: 50px;
     padding-left: 350px;
+    
 }
 .contact-right form textarea{
     width: 700px;
@@ -360,11 +361,23 @@ background-color: #9e3445;
     resize: none;
     border: none;
     border-radius: 10px;
+    background: #262626;
+    color: white;
+    font-size: 18px;
+    margin: 15px 0;
+    padding: 15px;
+
+    
 }
 .contact-right form input{
     width: 700px;
     border: none;
     border-radius: 10px;
+    background: #262626;
+    color: white;
+    font-size: 18px;
+    margin: 15px 0;
+    padding: 15px;
 }
 .contact-left
 {
@@ -419,19 +432,7 @@ background-color: #9e3445;
     margin-top: 8%;
     width: 100%;
 }
-form input, textarea{
-    width: 100%;
-    border:0%;
-    outline:none;
-    background: #262626 ;
-    padding: 15px;
-    margin: 15px 0;
-    color: white;
-    font-size: 18px;
-    border-radius: 15px;
-    
 
-}
 form input, ::placeholder{
     color: whitesmoke;
 }
@@ -535,8 +536,29 @@ nav .fa-solid{
         font-size: 14px;
         margin-bottom: 60px
     }
-    .contact-left, .contact-right
-    {flex-basis: 100%;}
+    .contact-left,.contact-right
+    
+    {flex-basis: 100%;
+    padding-top: 10px;}
+    .contact-right{
+        padding-top: 30px;
+    }
+    
+    .contact-right form{
+        padding-top: 20px;
+        padding-left: 0;
+        
+    }
+    .contact-right form input
+    {width:100%;}
+    .contact-right form textarea{
+        width:100%
+    }
+
+    
+        
+        
+    
     .copyright
     
         {font-size: 14px;}
