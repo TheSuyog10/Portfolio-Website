@@ -80,7 +80,7 @@
                                     <ul class="tab-content" id="experience">
     
                                 
-                                        <li class="tittle-name" ><span>2021-Current</span><br>UI/UX Design Training at ET Institute </1i>
+                                        <li class="tittle-name" ><span>2022-Current</span><br>It Assistant in Ashirwad Pipe Industries </1i>
                                     </ul>
                                 </div>
                                 <div>
@@ -114,21 +114,19 @@
                         <i class="fa-solid fa-crop"></i>
                         
                         <h2>Ux/Ui Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat praesentium nobis fugiat inventore facilis expedita ipsam id sunt, nisi recusandae eligendi atque adipisci cum odio, non, at omnis. Dignissimos, a.</p>
-                        <a href="#"> Learn more</a>
+                        
+<p>Proficient in developing applications using frameworks like React, ensuring efficient functionality, responsive design, and seamless user interactions.</p>                        
                     </div>
                     <div>
                         <i class="fa-solid fa-code"></i>
                         
                         <h2>Web Development</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat praesentium nobis fugiat inventore facilis expedita ipsam id sunt, nisi recusandae eligendi atque adipisci cum odio, non, at omnis. Dignissimos, a.</p>
-                        <a href="#"> Learn more</a>
+<p>Skilled in crafting visually appealing user interfaces and user experiences, employing design thinking to create intuitive and engaging digital products.</p>                        
                     </div>
                     <div>
                         <i class="fa-brands fa-app-store"></i>
                         <h2>App Development</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat praesentium nobis fugiat inventore facilis expedita ipsam id sunt, nisi recusandae eligendi atque adipisci cum odio, non, at omnis. Dignissimos, a.</p>
-                        <a href="#"> Learn more</a>
+<p>Experienced in web development using technologies such as React, CSS, and local storage, delivering responsive and feature-rich websites for optimal user experiences.</p>                        
                     </div>
 
 
@@ -144,10 +142,10 @@
                 <h1 class="sub-title"> My Works</h1>
                 <div class="works-list">
                     <div class="work">
-                        <img src="Images/mywork1.jpg" alt="">
+                        <img src="Images/logo.png" alt="Contact-Directory Logo">
                         <div class="layer">
-                            <h3>Music App</h3>
-                            <p>The app allows you to listen any kind of music from the artists around teh world.</p>
+                            <h3>Contact Directory Application</h3>
+                            <p>The app allows you to add, delete update the contacts of yours.</p>
                             <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a>-->
                         </div>
                     </div>
@@ -190,12 +188,13 @@
                             <a href="https://twitter.com/hey_suyog"  target="_blank"><i class="fa-brands fa-twitter"></i></a>
                             <a href="https://github.com/TheSuyog10"  target="_blank"><i class="fa-brands fa-github"></i></a>
                         </div>
-                        <a href="Images/The CV is.pdf" download class="btn btn2"  target="_blank">Download CV</a>
+                        <a href="Images/Resume.pdf" download class="btn btn2"  target="_blank">Download CV</a>
                     </div>
                     <div class="contact-right">
                         <form onsubmit="sendemail(); reset(); return false;"  method="post">
-                            <input type="text" name="Name" id="name" placeholder="Your Name" required>
-                            <input type="text" name="subject" id="subject" placeholder="Your Subject" required>
+                            <div class="name"><input type="text" name="Name" id="name" placeholder="Your Name" required>
+                             <input type="text" name="subject" id="subject" placeholder="Your Subject" required>
+                            </div>
                             <input type="email" name="Email" id="email" placeholder="Your Email" required>
                             <textarea name="Message" row="100" id="message" placeholder="Your Message" required></textarea>
                             <button type="submit" class="btn btn2" >Submit</button>
@@ -286,16 +285,25 @@
     <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
 <script>
 
-  window.addEventListener("scroll", () => {
-  const navbar = document.getElementById("navbar");
-  const scrollPosition = window.scrollY;
+let prevScrollPos = window.pageYOffset;
+const navbar = document.getElementById("navbar");
 
-  if (scrollPosition > 0) {
+window.onscroll = function () {
+  const currentScrollPos = window.pageYOffset;
+
+
+  if (prevScrollPos > currentScrollPos) {
     navbar.classList.add("blur");
+    
+    navbar.style.position="fixed";
   } else {
-    navbar.classList.remove("blur");
+   
+    navbar.classList.remove("blur")
+    navbar.style.position="relative";
+    
   }
-});
+  prevScrollPos = currentScrollPos;
+};
 
   </script>
 </body>
